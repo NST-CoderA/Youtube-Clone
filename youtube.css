@@ -1,0 +1,232 @@
+*{
+    font-family: 'Roboto';
+}
+body{
+    background-color: white;
+}
+/* Top of the site */
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+/* For left side of the header */
+.left{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+}
+.threeline{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#threelines{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.threeline:hover,.camera:hover,.notification:hover{
+    background-color: #F2F2F2;
+    border-radius: 100%;
+}
+
+.logo{
+    display: flex;
+    width: 110px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+/* For searchbar and search icon and microphone */
+.center{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+/* div which has search input and search icon */
+.searchbar{
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: space-between;
+    box-shadow: #f8f8f8;
+}
+/* Input */
+.searchbar input[type="text"]{
+    border: 0px;
+    width: 100%;
+    border-radius: 100px;   
+    font-size: 17px;
+    padding-left: 15px;
+    font-weight: lighter;
+    outline: none;
+    background-color: transparent;
+    cursor: text;
+}
+/* div with image of search */
+.search{
+    background-color: #f8f8f8;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* search icon */
+#searchlogo{
+    background-color: none;
+    width: 24px;
+    height: 24px;
+}
+.searchbar::after{
+    border: 2px solid blue;
+}
+
+/* Microphone icon */
+.micro{
+    margin-left: 10px;
+    background-color: #f8f8f8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.micro img{
+    width: 15px;
+    height: 20px;
+    background-color: none;
+}
+.search:hover,.micro:hover{
+    background-color: #F2F2F2;
+}
+
+/* Right side of the header */
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+/* camera */
+.camera{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+/* Notification bell */
+.notification{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+.notification img{
+    width: 20px;
+    height: 30px;
+}
+.account{
+    display: flex;
+    background-color: #AA47BD;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Body*/
+.body{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Left side of body */
+.leftbar{
+    height: 800px;
+    width: 14em;
+    overflow-y: scroll;   
+}
+.SideBar{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.newitem:hover{
+    cursor: pointer;
+    background-color:#dddcdc
+}
+.newitem{
+    display: flex;justify-content: center; align-items: center;border-radius: 50%; width: 40px;height: 40px
+}
+/* Div for vids */
+.left-part{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+/* For header of vids */
+.body-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/* For vids */
+.vids{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 783px;
+    overflow: scroll;
+
+}
+
+iframe{
+    border-radius: 22px;
+    width: 335.984px;
+    height: 188.984px;
+    margin-left: 10px;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
