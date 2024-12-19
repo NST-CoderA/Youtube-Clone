@@ -67,7 +67,7 @@ body{
     box-shadow: #f8f8f8;
 }
 /* Input */
-.searchbar input[type="text"]{
+.searchbar input[type="search"]{
     border: 0px;
     width: 100%;
     border-radius: 100px;   
